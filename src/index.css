@@ -1,14 +1,107 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #EDEBE8;
+  color: #1C1914;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1, h2, h3, h4, h5, h6, ul, p {
+	margin: 0;
+	padding: 0;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.display-flex {
+	display: flex;
+}
+
+.align-items-center {
+	align-items: center
+}
+
+.topbar {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 100px;
+	border-bottom: 1px solid lightgray;
+	color: #666;
+	
+}
+
+.topbar a {
+	color: #666;
+}
+
+.app-title {
+	font-size: 32px;
+	font-weight: bold;
+	color: #00A86B;
+}
+
+.app-description {
+	font-size: 14px;
+	padding-left: 10px;
+	padding-top: 4px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.navbar {
+	list-style-type: none;
+}
+.navbar li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.navbar a {
+	text-decoration: none;
+	font-size: 16px;
+}
+.navbar a:hover, .navbar a:focus {
+	text-decoration: underline;
+}
+.active-route{
+   font-weight: bold;
+}
+
+#mainContent {
+	padding: 10px 20px;
+	display: grid;
+	grid-template-columns: 40px 50px auto 50px 40px;
+}
+
+#searchContainer {
+	grid-column-start: 2;
+	grid-column-end: 5;
+	display: flex;
+	justify-content: center;
+}
+
+.search-component input {
+	display: block;
+	height: 50px;
+    font-size: 40px;
+    width: 100%;
+}
+
+#homePageSearch {
+	margin-top: 20px;
+}
+
+#homePageSearch label {
+	font-size: 55px;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+#homePageSearch input {
+	margin-top: 5px;
 }
