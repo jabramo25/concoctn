@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6, ul, p {
 	padding: 0;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 a:visited {
 	color: inherit;
 }
@@ -76,6 +80,7 @@ a:visited {
 	padding: 10px 20px;
 	display: grid;
 	grid-template-columns: 40px 50px auto 50px 40px;
+	grid-template-rows: auto auto auto;
 }
 
 #searchContainer {
@@ -83,6 +88,8 @@ a:visited {
 	grid-column-end: 5;
 	display: flex;
 	justify-content: center;
+	grid-row-start: 1;
+	grid-row-end: 1;
 }
 
 .search-component input {
@@ -104,4 +111,36 @@ a:visited {
 
 #homePageSearch input {
 	margin-top: 5px;
+	position: relative;
+}
+
+#recommendations {
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 5;
+
+}
+
+.recommendation-text {
+	margin: 30px 0;
+	font-size: 30px;
+	color: #00A86B;
+	text-align: center;
+}
+
+#recommendedRecipeList {
+	display:grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 300px;
+}
+
+#recommendedRecipeList a{
+	font-size: 25px;
+	text-decoration: none;
+	color: #00A86B;
+}
+
+.recommended-recipe {
+	padding-right: 10px;
 }

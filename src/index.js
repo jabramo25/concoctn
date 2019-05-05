@@ -11,13 +11,13 @@ import { Route, Link, NavLink, BrowserRouter as Router, Switch } from 'react-rou
 const routing = (
   <Router>
     <div>
-    	<div class="topbar">
-    		<span class="display-flex align-items-center">
-	    		<span class="app-title">Concotn</span>
-	    		<span class="app-description">The Recipe Tracking App</span>
+    	<div className="topbar">
+    		<span className="display-flex align-items-center">
+	    		<span className="app-title">Concotn</span>
+	    		<span className="app-description">The Recipe Tracking App</span>
     		</span>
 
-	    	<ul class="navbar">
+	    	<ul className="navbar">
 		        <li>
 		          <NavLink exact activeClassName="active-route" to="/">Home</NavLink>
 		        </li>
