@@ -5,11 +5,11 @@ Concoctn is a recipe tracking app.  The home page will greet you with some recom
 
 ## Work To Do
 
-*Add Recipe Form
-*Individual Recipe Pages Content/Styling 
-*Advanced Search
-*Recipe List
-*Back-end functionality (Java/Spring REST API)
+* Add Recipe Form
+* Individual Recipe Pages Content/Styling 
+* Advanced Search
+* Recipe List
+* Back-end functionality (Java/Spring REST API)
 
 This project is built with react and create-react-app. The component library used is react-bootstrap. Icons are FontAwesome. 
 
