@@ -67,10 +67,10 @@ class App extends React.Component {
           <h3 className="recommendation-text">{this.calculateTimeOfDay().label}</h3>
           <div id="recommendedRecipeList">
             {this.getRecommendedItems().map((item, key) => 
-              <div class="recommended-recipe">
+              <div key={item.recipeId} className="recommended-recipe">
                 <Link to={"/recipe/" + item.recipeId}>{item.recipeName}</Link>
                 <div>{item.description}</div>
-                <span class="bold">Time to make: </span><span>{item.timeToMake}</span>
+                <span className="bold">Time to make: </span><span>{item.timeToMake}</span>
               </div>
             )}
           </div>

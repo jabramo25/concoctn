@@ -1,7 +1,4 @@
-import React from 'react'
-class AddRecipe extends React.Component {
-  render() {
-    return <h1>Add Recipe</h1>
-  }
+#addRecipeForm {
+  grid-column-start: 2;
+	grid-column-end: 5; 
 }
-export default AddRecipe
